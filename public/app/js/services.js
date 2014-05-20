@@ -1,17 +1,23 @@
+/*global angular:false*/
+
 angular.module('myApp')
-    .factory('Authenticate', function($resource){
-        return $resource("/service/authenticate/")
+    .factory('Authenticate', function ($resource) {
+        "use strict";
+        return $resource("/service/authenticate/");
     })
-    .factory('Movies', function($resource){
-        return $resource("/service/movies")
+    .factory('Movies', function ($resource) {
+        "use strict";
+        return $resource("/service/movies");
     })
-    .factory('Flash', function($rootScope){
+    .factory('Flash', function ($rootScope) {
+        "use strict";
         return {
-            show: function(message){
-                $rootScope.flash = message
+            show: function (message) {
+                $rootScope.flash = message;
             },
-            clear: function(){
-                $rootScope.flash = ""
+            clear: function () {
+                $rootScope.flash = "";
             }
-        }
-    })
+        };
+    });
+    

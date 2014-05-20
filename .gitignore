@@ -10,3 +10,5 @@ composer.lock
 /public/assets/js
 /public/assets/script.min.js
 /public/assets/style.min.css
+nbproject
+
