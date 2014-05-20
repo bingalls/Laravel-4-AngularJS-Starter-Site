@@ -136,10 +136,23 @@ Should work, if not try
 
 Link to the article: http://blog.neoxia.com/laravel4-and-angularjs/
 
+### Changes
+This updates code that was deprecated in the original fork, to support
+* AngularJS v1.2
+* Laravel v4.1.26+
+
+All custom javascript is jshint clean, which prevents a bug, cleaned from the original fork.
+All HTML is now valid HTML5
+
+Most importantly, AngularJS's ui-router properly displays login page partials at
+the top. 
+Canned links in the bottom Twitter Bootstrap boilerplate still do nothing, and
+likely never were intended to.
+
 ### Licensing
 
 The MIT License (MIT)
-Copyright (c) 2014 Benjamin Katznelson
+Copyright (c) 2014 Bruce Ingalls & Benjamin Katznelson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

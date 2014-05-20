@@ -1,49 +1,53 @@
 {
-    "name": "bktz/laravel4-angularjs-starter-site",
+    "name": "bingalls/laravel4-angularjs-starter-site",
     "description": "Laravel 4 AngularJS Starter Site",
     "keywords": ["laravel", "angularjs", "starter"],
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Benjamin Katznelson",
-			"homepage": "http://ca.linkedin.com/in/benikatznelson",
-			"role": "Developer"
-		}
-	],
-	"require": {
-		"laravel/framework": "4.1.*",
-		"laravelbook/ardent": "dev-master",
-		"zizaco/entrust": "dev-master",
-		"j20/php-uuid": "dev-master"
-	},
-	"require-dev": {
-		"way/generators": "dev-master",
-		"mockery/mockery": "dev-master@dev",
-		"barryvdh/laravel-ide-helper": "dev-master"
-	},
-	"autoload": {
-		"classmap": [
-			"app/commands",
-			"app/controllers",
-			"app/models",
-			"app/database/migrations",
-			"app/database/seeds",
-			"app/tests/TestCase.php"
-		]
-	},
-	"scripts": {
-		"pre-update-cmd": [
-			"php artisan clear-compiled"
-		],
-		"post-install-cmd": [
-			"php artisan optimize"
-		],
-		"post-update-cmd": [
-			"php artisan optimize"
-		]
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "dev"
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Katznelson",
+            "homepage": "http://ca.linkedin.com/in/benikatznelson",
+            "role": "Developer"
+        },
+        {
+            "name": "Bruce Ingalls",
+            "homepage": "https://github.com/bingalls/Laravel-4-AngularJS-Starter-Site"
+        }
+    ],
+    "require": {
+        "laravel/framework": "4.1.*",
+        "laravelbook/ardent": "dev-master",
+        "zizaco/entrust": "dev-master",
+        "j20/php-uuid": "dev-master"
+    },
+    "require-dev": {
+        "way/generators": "dev-master",
+        "mockery/mockery": "dev-master@dev",
+        "barryvdh/laravel-ide-helper": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "app/commands",
+            "app/controllers",
+            "app/models",
+            "app/database/migrations",
+            "app/database/seeds",
+            "app/tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "pre-update-cmd": [
+            "php artisan clear-compiled"
+        ],
+        "post-install-cmd": [
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "php artisan optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev"
 }

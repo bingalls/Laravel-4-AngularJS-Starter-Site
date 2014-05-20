@@ -12,7 +12,7 @@
         <link href="assets/style.min.css" rel="stylesheet">
     </head>
 
-    <body class="container" ng-app="myapp">
+    <body class="container" data-ng-app="myapp">
 
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
@@ -28,9 +28,9 @@
 
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a ui-sref="login">Login</a></li>
-                        <li><a ui-sref="register">Register</a></li>
-                        <li><a ui-sref="movie">Movies</a></li>
+                        <li><a data-ui-sref="login">Login</a></li>
+                        <li><a data-ui-sref="register">Register</a></li>
+                        <li><a data-ui-sref="movie">Movies</a></li>
                     </ul>
                 </div>  <!--navbar-inner-->
             </div>  <!--container-->
@@ -42,7 +42,7 @@
 
             <div class="row">
                 <div class="span12">
-                    <div class="well" ui-view></div>        
+                    <div class="well" data-ui-view></div>        
                 </div>
             </div>         
 
@@ -57,7 +57,7 @@
                     <p>
                         <span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
                     <hr>
-                    <img src="http://placehold.it/900x300" class="img-responsive">
+                    <img alt="avatar" src="http://placehold.it/900x300" class="img-responsive">
                     <hr>
                     <p class="lead">Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
                     <p>You know, being a test pilot isn't always the healthiest business in the world.</p>

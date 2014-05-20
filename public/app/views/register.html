@@ -1,7 +1,7 @@
 
 <br><br>
 <div class="container">
-	<form class="form-horizontal" ng-submit="login()">
+	<form class="form-horizontal" data-ng-submit="login()">
 
 		<div class="panel panel-primary">
 
@@ -11,21 +11,21 @@
 
 			<div class="panel-body">
 
-				<alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
+				<div data-ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</div>
 
 				<fieldset>
 					<legend>Login Information</legend>
 					<div class="form-group">
 						<label class="col-md-2 control-label" for="inputEmail">Email</label>
 						<div class="col-md-10">
-							<input type="email" id="inputEmail" placeholder="Email" ng-model="email" required>
+							<input type="email" id="inputEmail" placeholder="Email" data-ng-model="email" required>
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label class="col-md-2 control-label" for="inputPassword">Password</label>
 						<div class="col-md-10">
-							<input type="password" ng-pattern="/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,18}/" min="6" maxlength="18" id="inputPassword" placeholder="Password" ng-model="password1" required>
+							<input type="password" data-ng-pattern="/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,18}/" maxlength="18" id="inputPassword" placeholder="Password" data-ng-model="password1" required>
 							<span class="help-block">Must include at least one number, lowercase letter, uppercase letter and must be between 6 and 16 characters long.</span>
 						</div>
 					</div>
@@ -33,7 +33,7 @@
 					<div class="form-group">
 						<label class="col-md-2 control-label" for="inputPassword">Confirm Password</label>
 						<div class="col-md-10">
-							<input type="password" ng-pattern="/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,18}/" min="6" maxlength="18" id="inputPassword" placeholder="Password" ng-model="password2" required>
+							<input type="password" data-ng-pattern="/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,18}/" maxlength="18" id="inputPassword" placeholder="Password" data-ng-model="password2" required>
 							<span class="help-block">Must include at least one number, lowercase letter, uppercase letter and must be between 6 and 16 characters long.</span>
 						</div>
 					</div>
@@ -45,7 +45,7 @@
 					<div class="form-group">
 						<label class="col-md-2 control-label" for="inputEmail">First Name</label>
 						<div class="col-md-10">
-							<input type="email" id="inputEmail" placeholder="Jogn" ng-model="firstName" required>
+							<input type="email" id="inputEmail" placeholder="Jogn" data-ng-model="firstName" required>
 						</div>
 					</div>
 				</fieldset>
