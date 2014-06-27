@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "4.1.*",
+        "laravel/framework": "4.2.*",
         "laravelbook/ardent": "dev-master",
         "zizaco/entrust": "dev-master",
         "j20/php-uuid": "dev-master"
