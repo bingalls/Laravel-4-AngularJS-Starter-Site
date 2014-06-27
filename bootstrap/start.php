@@ -28,7 +28,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('bruce-VirtualBox'),
+	'local' => array('my-hostname'),
 
 ));
 
